@@ -41,7 +41,6 @@ app.use(express.json());
 // app.use(bodyParser.json()); 
 // app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/api/v1", userRoutes);
-// app.use("/api/v1/admin", adminRoutes);
 app.use(Middleware.errorHandler);
 
 const port = process.env.PORT || 5000;
